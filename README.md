@@ -55,11 +55,7 @@ I tried to use as few libraries as possible (besides the main react-native one) 
 
 Design wise, the colour scheme is a clean white-on-grey, accented brightly to draw attention to interactive components. I chose a simple two view layout of a content library type view, and an asset details view. The choice not to have bespoke pages for thing like search results and favourites was intentional; the data is the same, so why present it differently for the sake of it. I am also generally a fan of rich views that serve many purposes - so I introduced search and favourites as conditionally rendered sections of the main page. If I had decided to go all-in on the search feature, I may have done a page allowing filters and tags to be added to the query to search by things like cast, genres etc, but since the search feature is quite straight-forward its best not to direct the user to a different page.
 The viewer component design is simple and clean. There was an absolute trove of data from the API that could have been used to flesh out more statistics and mini-features for the page (which I would have loved to do with more time), and I think the design lends well to expansion if one chooses to do any of these.
- 
-## Screenshots
-
-![Application](https://github.com/cboyce183/NativeMovies/blob/master/screenshots/2.png)
-![Application](https://github.com/cboyce183/NativeMovies/blob/master/screenshots/3.png)
 
  Thanks for reading!
 
+![Application](https://github.com/cboyce183/NativeMovies/blob/master/screenshots/2.png)

@@ -32,9 +32,9 @@ export class SectionBody extends React.Component {
     return (
       <ScrollView horizontal={true} contentContainerStyle={styles.root} >
         {dataToRender.slice(0, renderIndex).map((el) => <SectionCard key={el.id} data={el} navigate={navigate}/>)}
-        <View style={styles.iconCenter}>
+        {(renderIndex < dataToRender.length - 1) && <View style={styles.iconCenter}>
           <Icon name="plus" color="#767574" size={30} onPress={this.loadMore}/>
-        </View>
+        </View>}
       </ScrollView>
     )
   }

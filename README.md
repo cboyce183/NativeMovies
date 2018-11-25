@@ -1,7 +1,7 @@
 # NativeMovies
 Technical challenge for Dice
 
-![Application]('./screenshots/Screen Shot 2018-11-25 at 13.20.07.png')
+![Application](https://github.com/cboyce183/NativeMovies/blob/master/screenshots/Screen%20Shot%202018-11-25%20at%2013.20.07.png)
 
 
 ## Getting Started:
@@ -58,8 +58,8 @@ The viewer component design is simple and clean. There was an absolute trove of 
  
 ## Screenshots
 
-![Application]('./screenshots/Screen Shot 2018-11-25 at 18.28.20.png')
-![Application]('./screenshots/Screen Shot 2018-11-25 at 18.29.15.png')
+![Application](https://github.com/cboyce183/NativeMovies/blob/master/screenshots/Screen%20Shot%202018-11-25%20at%2018.28.20.png)
+![Application](https://github.com/cboyce183/NativeMovies/blob/master/screenshots/Screen%20Shot%202018-11-25%20at%2018.29.15.png)
 
  Thanks for reading!
 

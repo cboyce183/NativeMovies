@@ -9,7 +9,7 @@ System Requirements:
 - Android Studio with Android SDK (Oreo 8.1), Android SDK Platform 27, Android SDK build tools 27.0.3 Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image, Performance (Intel ® HAXM), Android Virtual Device
 - Xcode with latest command line tools
 
-You'll need to edit your bash profile:
+You'll need to edit your bash profile if you havn't got a path for Android emulators already:
 ```
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator

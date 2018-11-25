@@ -37,6 +37,17 @@ class AppBody extends Component {
       );
   }
 
+  renderFavourites = (props) => {
+    const {favourites, navigation: {navigate}} = props;
+    return !!favourites.length &&
+      (
+        <Fragment>
+          <ToolTip text="Favourites"/>
+          <SectionBase name="Favourites" navigate={navigate} data={favourites}/>
+        </Fragment>
+      );
+  }
+
   render() {
     const {navigate} = this.props.navigation;
     const {genres, favourites, search_results} = this.props;
@@ -46,6 +57,8 @@ class AppBody extends Component {
         <ScrollView style={styles.container} contentContainerStyle={styles.body}>
 
           {this.renderSearch(this.props)}
+
+          {this.renderFavourites(this.props)}
 
           <ToolTip text="Genres"/>
           {genres && genres.slice(0, renderIndex).map(el =>

@@ -6,6 +6,11 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+  "rnpm": {
+    "assets": [
+	    "./fonts/"
+    ]
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "react": "16.6.1",
@@ -13,6 +18,7 @@
     "react-native-elements": "^0.19.1",
     "react-native-gesture-handler": "^1.0.9",
     "react-native-vector-icons": "^6.1.0",
+    "react-native-youtube": "^1.1.0",
     "react-navigation": "^3.0.0",
     "react-redux": "^5.1.1",
     "redux": "^4.0.1"

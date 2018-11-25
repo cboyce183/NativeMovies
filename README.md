@@ -24,12 +24,18 @@ And load the project into Android Studio/Xcode.
 
 If stuck, you can find help [here.](https://facebook.github.io/react-native/docs/getting-started.html)
 
+Building:
+- Clone the repo.
+- `npm i` from root folder and `/NativeMovies`, then `react-native link`.
+- You may need to run `cocoa install` from the `ios` folder.
+
 Running the app from `root/NativeMovies/`:
 - Android: `react-native run-android`
 - iOS: `react-native run-ios --simulator="iPhone 6s"`
+- Logs: `react-native log-<ios/android>` (pick only one!).
 
 ## Troubleshooting
-- When running `npm i`, the module may need linking with `react-native link <module_name>`.
+- When running `npm i`, the module may need explicitly linking with `react-native link <module_name>`.
 - There are build issues running on the iPhone X simulator, I recommend using iPhone 6s simulator first.
 - If you get *really* stuck, leave an issue here with a paste/screenshot of the error message (if any), and I will see if I can help.
 
@@ -54,3 +60,6 @@ The viewer component design is simple and clean. There was an absolute trove of 
 
 ![Application](./screenshots/Screen Shot 2018-11-25 at 18.28.20.png)
 ![Application](./screenshots/Screen Shot 2018-11-25 at 18.29.15.png)
+
+ Thanks for reading!
+

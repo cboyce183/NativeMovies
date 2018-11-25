@@ -21,7 +21,7 @@ export class Search extends React.Component {
   }
 
   _onChange = (query) => {
-    if (!query) this.props.setSearchResults(null);
+    if (!query) this.props.setSearchResults([]);
     axios.get("https://api.themoviedb.org/3/search/movie?api_key=cc0f3deac833d283a230b440f5e7d753&language=en-US&page=1&query=" + query)
       .then(response => {
         const search_results = response.data.results;

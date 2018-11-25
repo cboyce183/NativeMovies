@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, Text, Image, TouchableHighlight, Animated } from "react-native"
+import { StyleSheet, Text, Image, TouchableOpacity, Animated } from "react-native"
 import { connect } from 'react-redux';
 
 class SectionCard extends React.Component {
@@ -21,12 +21,12 @@ class SectionCard extends React.Component {
     const uri = "https://image.tmdb.org/t/p/w500" + data.poster_path;
 
     return (
-      <TouchableHighlight style={styles.root} onPress={() => navigate('Viewer', {data, favourites, callbacks: {setFavourite, delFavourite}})}>
+      <TouchableOpacity style={styles.root} onPress={() => navigate('Viewer', {data, favourites, callbacks: {setFavourite, delFavourite}})}>
         <Animated.View style={[styles.wrapper, {opacity: fadeAnim}]}>
           <Image style={styles.img} source={{uri}}/>
           <Text>{data.title}</Text>
         </Animated.View>
-      </TouchableHighlight>
+      </TouchableOpacity>
     )
   }
 }

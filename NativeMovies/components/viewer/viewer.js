@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import { Button, StyleSheet, Text, View, Image, ScrollView, Platform, TouchableHighlight, Animated, Dimensions} from 'react-native';
+import { Button, StyleSheet, Text, View, Image, ScrollView, Platform, TouchableOpacity, Animated, Dimensions} from 'react-native';
 import { YouTubeStandaloneIOS } from 'react-native-youtube';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import axios from 'axios'
@@ -55,9 +55,9 @@ export default class Viewer extends Component {
           {Platform.OS !== 'android' && video && <Button title="Watch trailer" onPress={() => YouTubeStandaloneIOS.playVideo(video)}/>}
         </Animated.View>
 
-        <TouchableHighlight style={{position:'absolute',top:10,left:10}} onPress={() => this.onFavourite()}>
-          {favourited ? <Icon name='heart' size={25} color="red"/> : <Icon name='heart' size={25} color="white"/>}
-        </TouchableHighlight>
+        <TouchableOpacity style={{position:'absolute',top:10,left:10}} onPress={() => this.onFavourite()}>
+          {favourited ? <Icon name='heart' size={25} color="#ff5050"/> : <Icon name='heart' size={25} color="white"/>}
+        </TouchableOpacity>
 
       </ScrollView>
     );

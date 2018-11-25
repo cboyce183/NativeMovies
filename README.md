@@ -24,3 +24,14 @@ If stuck, you can find help [here.](https://facebook.github.io/react-native/docs
 Running the app:
 - Android: `react-native run-android`
 - iOS: `react-native react-native run-ios --simulator="iPhone 6s"`
+
+##Motivations & Workflow
+____
+I started by exploring the API provided, and discovered the major endpoints lend themselves well to using Redux.
+
+In order to build the features I want, I will use three bundled redux stores to return movie genres, favourited movies, and search results. This gives three seperate sources of data, one for each major feature, but the shape of each allowing easy cross reference between them.
+
+I will also use react-navigation to handle the two views: the main content view, and the individual movie details view.
+
+Finally, I plan to use Axios to fetch the data since the library has a lot of common functionality baked in, and will save time.
+____

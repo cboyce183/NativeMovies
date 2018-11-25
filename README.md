@@ -21,9 +21,9 @@ And load the project into Android Studio/Xcode.
 
 If stuck, you can find help [here.](https://facebook.github.io/react-native/docs/getting-started.html)
 
-Running the app:
+Running the app from `root/NativeMovies/`:
 - Android: `react-native run-android`
-- iOS: `react-native react-native run-ios --simulator="iPhone 6s"`
+- iOS: `react-native run-ios --simulator="iPhone 6s"`
 
 ## Motivations & Workflow
 ____

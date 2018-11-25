@@ -1,5 +1,5 @@
 import React from 'react';
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
 import axios from 'axios'
 
@@ -26,6 +26,17 @@ class AppBody extends Component {
       .catch(e => console.log(e))
   }
 
+  renderSearch = (props) => {
+    const {search_results, navigation: {navigate}} = props;
+    return !!search_results.length &&
+      (
+        <Fragment>
+          <ToolTip text="Search Results"/>
+          <SectionBase name="Search Results" navigate={navigate} data={search_results}/>
+        </Fragment>
+      );
+  }
+
   render() {
     const {navigate} = this.props.navigation;
     const {genres, favourites, search_results} = this.props;
@@ -33,6 +44,8 @@ class AppBody extends Component {
 
     return (
         <ScrollView style={styles.container} contentContainerStyle={styles.body}>
+
+          {this.renderSearch(this.props)}
 
           <ToolTip text="Genres"/>
           {genres && genres.slice(0, renderIndex).map(el =>

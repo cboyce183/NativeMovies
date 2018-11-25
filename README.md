@@ -25,7 +25,7 @@ Running the app:
 - Android: `react-native run-android`
 - iOS: `react-native react-native run-ios --simulator="iPhone 6s"`
 
-##Motivations & Workflow
+## Motivations & Workflow
 ____
 I started by exploring the API provided, and discovered the major endpoints lend themselves well to using Redux.
 

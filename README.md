@@ -1,7 +1,4 @@
 # NativeMovies
-Technical challenge for Dice
-
-*Apologies for the commit mess re images... they were getting the better of me!
 
 ![Application](https://github.com/cboyce183/NativeMovies/blob/master/screenshots/1.png)
 
